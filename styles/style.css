@@ -1,0 +1,254 @@
+/* index.html */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-variant: normal;
+}
+#logohotel {text-align: center;}
+#logo {
+width: 200px;
+height: 50%;
+cursor: pointer;
+}
+header{
+position: sticky;
+top: 0;
+}
+#bar{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #24252A;
+}
+li.head{
+float: left;
+}
+li.head a {
+display: block;
+color: #ffffff;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li.head a:hover {
+background-color: #111;
+}
+#limit{
+  float: right;
+}
+#bn:hover{
+  background-color: black;
+}
+#bn{
+  background-color: #20b2aa;
+}
+#welcome {
+background-image: url(picture/hotel/1.jpg);
+height: 730px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+text-align: center;
+color: #ffffff;
+display: block;
+align-items: center;
+justify-content: center;
+}
+#guestroom {
+text-align: center;
+background-color: #fffacd;
+}
+.grid-container {
+display: grid;
+grid-column-gap: 50px;
+grid-template-columns: auto auto auto;
+background-color: #ffffff;
+padding: 20px;
+}
+
+#grid-item1 {
+padding: 80px;
+font-size: 30%;
+text-align: center;
+margin: 5em 0 0 25em;
+width: 80%;
+height: 50em;
+background-image: url(picture/hotel/2.jpg);
+background-size: cover ;
+}
+#grid-item2 {
+padding: 80px;
+font-size: 30%;
+text-align: center;
+margin: 5em 5em 0 10em;
+width: 80%;
+height: 50em;
+background-image: url(picture/hotel/3.jpg);
+background-size: cover;
+}
+#grid-item3{
+padding: 80px;
+font-size: 30%;
+text-align: center;
+margin: 5em 0 0 27em;
+width: 80%;
+height: 50em;
+background-image: url(picture/hotel/4.jpg);
+background-size: cover ;
+}
+#grid-item4{
+padding: 80px;
+font-size: 30%;
+text-align: center;
+margin: 5em 10em 0 20em;
+width: 80%;
+height: 50em;
+background-image: url(picture/hotel/5.jpg);
+background-size: cover;
+}
+button{
+border-radius: 12px;
+border: none;
+color: white;
+padding: 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+background-color: #463C3C;
+}
+button:hover 
+{
+background-color: #262121;
+}
+footer p {display: inline-block;}
+
+#contact img{
+  width: 50px;
+  height: 20%;
+  padding: 10px 10px 0px 10px;
+  margin-top: 10px;
+
+}
+
+footer {
+background-color: #24252A;
+color: #ffffff;
+text-align: center;
+}
+/*product.html*/
+#intro {
+background-image: url(picture/hotel/4.jpg);
+height: 730px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+text-align: center;
+color: #ffffff;
+display: block;
+align-items: center;
+justify-content: center;
+}
+
+.images {
+display: grid;
+grid-gap: 50px 100px;
+grid-template-columns: auto auto auto;
+background-color: none;
+padding: 10px;
+border-top: 3em;
+}
+.silde {
+background-color: none;
+border:  1px solid #ffffff;
+padding: 20px;
+font-size: 30px;
+text-align: center;
+}
+.un {
+width: 90%;
+height: 90%;
+}
+.ro {
+background-color: #FAEBD7 ;
+}
+#tab {
+margin: 2em 5em 0 5em;
+}
+/*enquire.html*/
+input[type=text], select, textarea, input[type=radio], input[type=checkbox]{
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+resize: vertical;
+}
+label {
+padding: 12px 12px 12px 0;
+display: inline-block;
+}
+.fi {
+float: left;
+width: 25%;
+margin-top: 6px;
+margin-left: 10px;
+margin-bottom: 10px;
+}
+.se {
+float: left;
+width: 75%;
+margin-top: 6px;
+margin-bottom: 10px;
+}
+.row:after {
+content: "";
+display: table;
+clear: both;
+padding: 20px;
+}
+#Bookingroom {
+margin: 2em 2em 10em 2em;
+}
+textarea:focus{
+box-shadow: 0 0 5px blue;
+}
+.i{
+border-radius: 12px;
+border: none;
+color: white;
+padding: 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+background-color: #463C3C;
+}
+.i:hover{
+background-color: #FF6347;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+  border: 1px solid black;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+

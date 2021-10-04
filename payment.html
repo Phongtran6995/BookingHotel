@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Booking hotel" />
+  <meta name="keywords" content="HTML, CSS" />
+  <meta name="author" content="Phong" />
+  <title>PAYMENT</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet" />
+  <script src="part2.js"></script>
+</head>
+<body>
+    <p id="logohotel">
+        <a href="index.html"> 
+          <img id="logo" src="styles/picture/hotel/logo.png" alt="logo_hotel" /> 
+        </a>
+    </p>
+    <header>
+      <ul id="bar">
+        <li class="head"><a href="index.html">HOME</a></li>
+        <li class="head"><a href="product.html">HOTEL</a></li>
+        <li class="head"><a href="enquire.html">STAY</a></li>
+        <li class="head"><a href="payment.html">PAYMENT</a></li>
+        <li class="head" id="limit"><a id="bn" href="enquire.html">BOOK NOW</a></li>
+      </ul>
+    </header>
+    <form id="paymentForm" method="POST" action="https://mercury.swin.edu.au/it000000/formtest.php">
+        <input type="hidden" name="firstname" id="firstname">
+        <input type="hidden" name="lastname" id="lastname">
+        <input type="hidden" name="email" id="email">
+        <input type="hidden" name="phone" id="phone">
+        <input type="hidden" name="address" id="address">
+        <input type="hidden" name="Suburb" id="Suburb">
+        <input type="hidden" name="State" id="State">
+        <input type="hidden" name="Postcode" id="Postcode">
+        <input type="hidden" name="roomType" id="roomType">
+        <input type="hidden" name="checkin" id="checkin">
+        <input type="hidden" name="checkout" id="checkout">
+        <input type="hidden" name="adults" id="adults">
+        <input type="hidden" name="Children" id="Children">
+        <input type="hidden" name="rooms" id="rooms">
+        <input type="hidden" name="Cost" id="Cost">
+        <fieldset>
+            <legend>Personal Information & Contact</legend>
+            <div class="row">
+            <div class="fi">
+            <label for="fullname">Full Name</label></div>
+            <div class="se">
+            <p><span id="fullname"></span></p>
+            </div>
+            <div class="row">
+            <div class="fi">
+            <label for="email">Email Address</label></div>
+            <div class="se">
+              <p><span id="email-1"></span></p>
+            </div>
+            <div class="row">
+            <div class="fi">
+            <label for="Phone">Phone Number</label></div>
+            <div class="se">
+              <p><span id="Phone"></span></p>
+            </div>
+            <div class="row">
+            <div class="fi">
+            <label for="Address">Address</label></div>
+            <div class="se">
+              <p><span id="Address"></span></p>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Booked Room</legend>
+            <div class="row">
+            <div class="fi">
+            <label for="Rooms1">Room Types</label></div>
+            <div class="se">
+              <p><span id="Rooms1"></span></p>
+            </div>
+            <div class="row">
+            <div class="fi">
+            <label for="Checkin">Check In</label></div>
+            <div class="se">
+              <p><span id="Checkin"></span></p>
+             </div>
+            <div class="row">
+            <div class="fi">
+            <label for="Checkout">Check Out</label></div>
+            <div class="se">
+              <p><span id="Checkout"></span></p>
+            </div>
+            <div class="row">
+            <div class="fi">
+            <label for="Adults">Adults</label></div>
+            <div class="se">
+              <p><span id="Adults"></span></p>
+            </div>
+            <div class="row">
+            <div class="fi">
+            <label for="Children">Children</label></div>
+            <div class="se">
+              <p><span id="Children-1"></span></p>
+            </div>
+            <div class="row">
+            <div class="fi">
+            <label for="Rooms">Rooms</label></div>
+            <div class="se">
+              <p><span id="Rooms"></span></p>
+            </div>
+            <div class="row">
+            <div class="fi">
+            <label for="Cost">Total Cost</label></div>
+            <div class="se">
+              <p><span id="Cost-1"></span></p>
+            </div>
+            </div>
+        </fieldset>
+        <fieldset>
+        <legend>Payment Detail</legend>
+        <div class="row">
+        <div class="fi">
+        <label for="card">Card Type</label></div>
+        <div class="se">
+			  <select name="card" id="card">
+				  <option value="visa">Visa</option>			
+				  <option value="master">MasterCard</option>
+				  <option value="amex">American Express</option>
+        </select>
+        </div>
+        <div class="row">
+        <div class="fi">
+        <label for="owner">Owner</label></div>
+        <div class="se">
+        <input type="text" id="owner"></div></div>
+        </div>
+        <div class="row">
+        <div class="fi">
+        <label for="cvv">CVV</label></div>
+        <div class="se">
+        <input type="text" id="cvv"></div>
+        </div>
+        <div class="row">
+            <div class="fi">
+            <label for="cardNumber">Card Number</label></div>
+            <div class="se">
+            <input type="text" id="cardNumber"></div>
+        </div>
+        <div class="row">
+        <div class="fi">
+            <label>Expiration Date</label></div>
+        <div class="se">
+        <select>
+            <option value="01">January</option>
+            <option value="02">February </option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
+        </div>
+        <div class="se">
+        <select>
+            <option value="16"> 2021</option>
+            <option value="17"> 2022</option>
+            <option value="18"> 2023</option>
+            <option value="19"> 2024</option>
+            <option value="20"> 2025</option>
+            <option value="21"> 2026</option>
+        </select>
+        </div>
+        </fieldset>
+        <input class="i" type="submit" value="Pay Now" />
+        <input id="cancelBooking" class="i" type="reset" value="Cancel Booking" />
+    </form>
+    <footer>
+        <div id="contact">
+        <p class="foot"><i class="material-icons">&#xe32c;</i></p>
+        <p class="foot">Call +61 468 677 792</p><br />
+        <p class="foot"><a href="https://twitter.com/login?lang=vi">
+          <img src="styles/picture/social/twitter_icon.png" alt="twitter_icon" />
+        </a>
+        </p>
+        <p class="foot"><a href="https://www.facebook.com/" >
+          <img src="styles/picture/social/facebook_icon.png" alt="facebook_icon" />
+        </a>
+        </p>
+        <p class="foot"><a href="https://www.instagram.com/?hl=vi" >
+          <img src="styles/picture/social/instagram_icon.png" alt="instagram_icon" />
+        </a>
+        </p>
+        <p class="foot"><a href="https://www.youtube.com/" >
+          <img src="styles/picture/social/youtube.png" alt="youtube_icon" />
+        </a>
+        </p>
+        </div>
+    </footer>
+</body>
+</html>

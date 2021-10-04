@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Booking hotel" />
+  <meta name="keywords" content="HTML, CSS" />
+  <meta name="author" content="Phong" />
+  <title>STAY</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet" />
+  <script src="part2.js"></script>
+</head>
+<body>
+    <p id="logohotel">
+        <a href="index.html"> 
+          <img id="logo" src="styles/picture/hotel/logo.png" alt="logo_hotel" /> 
+        </a>
+        </p>
+        <header>
+          <ul id="bar">
+            <li class="head"><a href="index.html">HOME</a></li>
+            <li class="head"><a href="product.html">HOTEL</a></li>
+            <li class="head"><a href="enquire.html">STAY</a></li>
+            <li class="head"><a href="payment.html">PAYMENT</a></li>
+            <li class="head" id="limit"><a id="bn" href="enquire.html">BOOK NOW</a></li>
+          </ul>
+        </header>
+    <div id="Bookingroom">
+        <form id="enquireForm"  action="payment.html">
+        <fieldset>
+        <legend>Personal Information</legend>
+            <div class="row">
+            <div class="fi">
+            <label for="fname">First Name</label></div>
+            <div class="se">
+            <input type="text" name="name" id="fname" maxlength="25" required="required" pattern="^[a-zA-Z]+$" /></div>
+            </div>
+            <div class="row">
+            <div class="fi">
+            <label for="lName">Last Name</label></div>
+            <div class="se">
+            <input type="text" name="name" id="lName" maxlength="25" required="required" pattern="^[a-zA-Z]+$" /></div>
+            </div>
+            <div class="row">
+            <div class="fi">
+            <label for="mail">Email Address</label></div>
+            <div class="se">
+            <input type="text" name="mail" id="mail" placeholder="example@mail.com" required="required" /></div>
+            </div>       
+            <div class="row">
+            <div class="fi">
+            <label for="phone">Phone Number</label></div>
+            <div class="se">   
+            <input type="text" name="phone" id="phone" maxlength="10" placeholder="0468xxxxxx" required="required" /></div>
+            </div>
+        </fieldset> 
+        <fieldset>
+            <legend>Address</legend>
+                <div class="row">
+                <div class="fi">
+                <label for="address">Street Address</label></div>
+                <div class="se">
+                <input type="text" name="address" id="address" maxlength="40" required="required" /></div>
+                </div>
+                <div class="row">
+                <div class="fi">
+                <label for="Suburb">Suburb/town</label></div>
+                <div class="se">
+                <input type="text" name="town" id="Suburb" maxlength="20" required="required" /></div>
+                </div>
+                <div class="row">
+                <div class="fi">
+                <label for="State">State</label></div>
+                <div class="se">
+                <select name="state" id="State" required="required" >
+                    <option value="">Please select</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select>
+                </div>
+                </div>
+                <div class="row">
+                <div class="fi">
+                <label for="Postcode">Postcode</label></div>
+                <div class="se">
+                <input type="text" name="postcode" id="Postcode" pattern="\d{4}" required="required" /></div>
+                </div>
+        </fieldset>
+        <fieldset>
+            <legend>Rooms</legend>
+            <div class="row">
+              <div class="fi">
+              <label for="State">Choose State you want to stay</label></div>
+              <div class="se">
+              <select name="state" id="State" required="required" >
+                  <option value="">Please select</option>
+                  <option value="VIC">VIC</option>
+                  <option value="NSW">NSW</option>
+                  <option value="NT">NT</option>
+                  <option value="WA">WA</option>
+                  <option value="SA">SA</option>
+              </select>
+              </div>
+              </div>
+                <div class="row">
+                <div class="fi">
+                <label for="Room">Room Types</label></div>
+                <div class="se">
+                <select name="room" id="Room">
+                    <option value="">Please select</option>
+                    <option value="room1">King (From 499 AUD)</option>
+                    <option value="room2">One Bed (From 303 AUD)</option>
+                    <option value="room3">Two Beds (From 333 AUD)</option>
+                    <option value="room4">Suite (From 539 AUD)</option>
+                </select>
+                </div>
+                </div>
+                <div class="row">
+                <div class="fi">
+                <label for="checkin">Check In</label></div>
+                <div class="se">
+                <input type="date" id="checkin" name="checkin"></div>
+                </div>
+                <div class="row">
+                <div class="fi">
+                <label for="checkout">Check Out</label></div>
+                <div class="se">
+                <input type="date" id="checkout" name="checkout"></div>
+                </div>
+                <div class="row">
+                <div class="fi">
+                <label for="adults">Adults</label></div>
+                <div class="se">
+                <input type="text" id="adults" name="adults"></div>
+                </div>
+                <div class="row">
+                <div class="fi">
+                <label for="children">Children</label></div>
+                <div class="se">
+                <input type="text" id="children" name="Children"></div>
+                </div>
+                <div class="row">
+                <div class="fi">
+                <label for="rooms">Rooms</label></div>
+                <div class="se">
+                <input type="text" id="rooms" name="rooms"></div>
+                </div>
+                <p></p>
+                <div class="fi">
+                <label for="wifi">Free Wifi</label></div>
+                <input type="checkbox" id="wifi" name="feature[]" value="wifi" checked="checked" />
+                <div class="fi">
+                <label for="parking">Self parking[surcharge]</label></div>
+                <input type="checkbox" id="parking" name="feature[]" value="parking" />
+                <div class="fi">
+                <label for="restaurent">Restaurent</label></div>
+                <input type="checkbox" id="restaurent" name="feature[]" value="retaurent" />
+                <div class="fi">
+                <label for="luggage">Luggage storage</label></div>
+                <input type="checkbox" id="luggage" name="feature[]" value="luggage" />
+                <div class="fi">
+                <label for="24-hourfrontdesk">24-hour front desk</label></div>
+                <input type="checkbox" id="24-hourfrontdesk" name="feature[]" value="24-hour front desk" />
+                <div class="fi">
+                <label for="Business">Business center</label></div>
+                <input type="checkbox" id="Business" name="feature[]" value="business" />
+                <div class="fi">
+                <label for="Description">Other requests</label></div>
+                <div class="se">
+                <textarea id="Description" name="Description" rows="4" cols="40" placeholder="Please ask if you have any problems ..." ></textarea></div>
+        </fieldset>
+        <input class="i" type="submit" value="Book" />
+        <input class="i" type="reset" value="Reset" />
+        </form>
+    </div>
+    <footer>
+        <div id="contact">
+        <p class="foot"><i class="material-icons">&#xe32c;</i></p>
+        <p class="foot">Call +61 468 677 792</p><br />
+        <p class="foot"><a href="https://twitter.com/login?lang=vi">
+          <img src="styles/picture/social/twitter_icon.png" alt="twitter_icon" />
+        </a>
+        </p>
+        <p class="foot"><a href="https://www.facebook.com/" >
+          <img src="styles/picture/social/facebook_icon.png" alt="facebook_icon" />
+        </a>
+        </p>
+        <p class="foot"><a href="https://www.instagram.com/?hl=vi" >
+          <img src="styles/picture/social/instagram_icon.png" alt="instagram_icon" />
+        </a>
+        </p>
+        <p class="foot"><a href="https://www.youtube.com/" >
+          <img src="styles/picture/social/youtube.png" alt="youtube_icon" />
+        </a>
+        </p>
+        </div>
+    </footer>
+</body>
+</html>
