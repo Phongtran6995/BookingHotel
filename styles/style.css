@@ -1,15 +1,20 @@
-/* index.html */
+
+
+@media only screen and (max-width: 740px) {
+    /* index.html */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: bold;
   font-variant: normal;
 }
-#logohotel {text-align: center;}
+#logohotel {
+  text-align: center;
+}
 #logo {
-width: 200px;
+width: 100px;
 height: 50%;
 cursor: pointer;
 }
@@ -31,8 +36,9 @@ li.head a {
 display: block;
 color: #ffffff;
 text-align: center;
-padding: 14px 16px;
+padding: 7px 8px;
 text-decoration: none;
+font-size: 10px;
 }
 li.head a:hover {
 background-color: #111;
@@ -48,7 +54,8 @@ background-color: #111;
 }
 #welcome {
 background-image: url(picture/hotel/1.jpg);
-height: 730px;
+width: 100%;
+height: 400px;
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -58,58 +65,26 @@ display: block;
 align-items: center;
 justify-content: center;
 }
-#guestroom {
-text-align: center;
-background-color: #fffacd;
-}
-.grid-container {
-display: grid;
-grid-column-gap: 50px;
-grid-template-columns: auto auto auto;
-background-color: #ffffff;
-padding: 20px;
-}
-
-#grid-item1 {
-padding: 80px;
-font-size: 30%;
-text-align: center;
-margin: 5em 0 0 25em;
-width: 80%;
-height: 50em;
-background-image: url(picture/hotel/2.jpg);
-background-size: cover ;
-}
-#grid-item2 {
-padding: 80px;
-font-size: 30%;
-text-align: center;
-margin: 5em 5em 0 10em;
-width: 80%;
-height: 50em;
-background-image: url(picture/hotel/3.jpg);
-background-size: cover;
-}
-#grid-item3{
-padding: 80px;
-font-size: 30%;
-text-align: center;
-margin: 5em 0 0 27em;
-width: 80%;
-height: 50em;
-background-image: url(picture/hotel/4.jpg);
-background-size: cover ;
-}
-#grid-item4{
-padding: 80px;
-font-size: 30%;
-text-align: center;
-margin: 5em 10em 0 20em;
-width: 80%;
-height: 50em;
-background-image: url(picture/hotel/5.jpg);
-background-size: cover;
-}
+.images1 {
+  display: grid;
+  width: 50%;
+  grid-gap: 1px 1px;
+  grid-template-columns: 120px 120px 120px;
+  background-color: none;
+  padding: 1px;
+  border-top: 100px;
+  }
+  .silde1 {
+  background-color: none;
+  border:  1px solid #ffffff;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  }
+  .un1 {
+  width: 100%;
+  height: 100px;
+  }
 button{
 border-radius: 12px;
 border: none;
@@ -145,7 +120,8 @@ text-align: center;
 /*product.html*/
 #intro {
 background-image: url(picture/hotel/4.jpg);
-height: 730px;
+width: 375px;
+height: 200px;
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -157,29 +133,30 @@ justify-content: center;
 }
 
 .images {
-display: grid;
-grid-gap: 50px 100px;
-grid-template-columns: auto auto auto;
-background-color: none;
-padding: 10px;
-border-top: 3em;
+  display: grid;
+  width: 50%;
+  grid-gap: 1px 1px;
+  grid-template-columns: 120px 120px 120px;
+  background-color: none;
+  padding: 1px;
+  border-top: 100px;
 }
 .silde {
-background-color: none;
-border:  1px solid #ffffff;
-padding: 20px;
-font-size: 30px;
-text-align: center;
+  background-color: none;
+  border:  1px solid #ffffff;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 .un {
-width: 90%;
-height: 90%;
+  width: 100%;
+  height: 100px;
 }
 .ro {
 background-color: #FAEBD7 ;
 }
 #tab {
-margin: 2em 5em 0 5em;
+margin: 10px 10px 0 10px;
 }
 /*enquire.html*/
 input[type=text], select, textarea, input[type=radio], input[type=checkbox]{
@@ -226,7 +203,7 @@ padding: 10px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
-font-size: 16px;
+font-size: 10px;
 margin: 4px 2px;
 cursor: pointer;
 background-color: #463C3C;
@@ -251,4 +228,8 @@ th, td {
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-
+ 
+}
+#paymentForm {
+  margin-bottom: 70px;
+}
